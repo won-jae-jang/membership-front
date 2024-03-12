@@ -37,14 +37,15 @@
     <form action="board.html" method="post">
       <table>
         <tr>
-          <td><h3>글 작성</h3></td>
+          <td><h3>글 작성하기</h3></td>
+          <br />
         </tr>
         <tr>
           <td class="header">Title</td>
         </tr>
         <tr>
           <td>
-            <input type="text" placeholder="제목을 입력하세요" />
+            <input type="text" placeholder="제목을 입력하세요" id="title" />
           </td>
         </tr>
         <tr>
@@ -52,15 +53,21 @@
         </tr>
         <tr>
           <td>
-            <textarea placeholder="내용을 입력하세요" name="detail"></textarea>
+            <textarea
+              placeholder="내용을 입력하세요"
+              name="detail"
+              id="content"
+            ></textarea>
           </td>
         </tr>
+        <br />
         <tr>
           <td>
-            <input type="submit" value="등록" onclick="alert('작성 완료!')" />
+            <button id="writeBtn">클릭</button>
           </td>
         </tr>
       </table>
     </form>
+    <script src="./js/write.js"></script>
   </body>
 </html>
